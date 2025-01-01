@@ -40,8 +40,16 @@ export default function RootLayout({
         h-[32rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68rem]
         md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
        
-        <Header />
-        <main>{children}</main>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <Footer />
+
+            <Toaster position="top-right" />
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
