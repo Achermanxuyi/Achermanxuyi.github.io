@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased
-          bg-violet-50 text-gray-950 h-[5000px]`}
+          bg-violet-50 text-gray-950`}
       >
         <div className="bg-blue-200 absolute top-[-6rem] -z-10 right-[11rem]
         h-[32rem] w-[32rem] rounded-full blur-[10rem] sm:w-[68rem]"></div>
